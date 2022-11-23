@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<section class ="content">
+    <div class="main-header">
+        <img src="/static/img/smart-home.png" class="logo" style = "height: 40px; padding:2%"/>
+        <h1>Edit</h1>
+    </div>
+    <section class="post_form">
+        <form
+        method="POST"
+        enctype = "multipart/form-data">
+        {% csrf_token %}
+    <input
+    type="text"
+    name="name"
+    placeholder="name"
+    value="{{post.name}}"
+    style="/* width :80%; *//* margin-bottom: 10px; */border: 0px; width: 70.5%;background: #cde9ff;border-radius: 5px;margin-bottom: 10px;padding: 10px; font-size: 15px;"
+    />
+    <textarea name="body" placeholder = "What's happening ?" required >
+        {{ post.body }}
+    </textarea>
+    <label for = "{{ post.name }}"></label>
+    {% if post.image.url %}
+    <img class="post-border" src="{{ post.image }}"/>
+    {% endif %}
+    <div class="flex">
+        <input class="form-control  form-control-sn" name="image" type="file"/> 
+        <div class="b1">
+            <a class="cancel-button" href="{% url 'index' %}">Cancel </a>
+            <input type="submit" value ="Update" class="update-button"/>
+        </div> 
+    </div>
+</form>
+</section>
+</section>
+{% endblock %}
+
+

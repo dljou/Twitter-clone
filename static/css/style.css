@@ -1,0 +1,221 @@
+/****
+Common
+**********************************/
+
+.main-header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 600px;
+    height: 10%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: #94c47d;
+}
+
+.main-header .header-icon{
+    width: 20%;
+}
+
+.main-header .header-icon .header-logo {
+    width: 50px;
+    margin: 20px 55px;
+}
+
+.main-header h1{
+    font-size: 40px;
+    line-height: 10px;
+    margin-bottom: 25px;
+    margin-left: 120px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+}
+
+html{
+    background-color: aliceblue;
+}
+
+html, body{
+    height: 100%;
+}
+
+.content {
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/****
+Post
+***********************************/
+
+.post_form {
+    padding: 20px 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    list-style: none;
+    position: relative;
+    flex-basis: 85%;
+    background-color: white;
+}
+
+.post_form .logo {
+    display: flex;
+    flex-basis: 15%;
+    height: 50%;
+}
+
+.post_form .logo img{
+    width: 95%;
+}
+
+.flex {
+    justify-content: space-between;
+    width: 94%;
+  }
+
+.upload-file {
+    overflow: hidden;
+    color: black;
+    margin-top: 3%;
+    width: 50%;
+    min-height: calc(1.5em + 0.5rem + 2px);
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+    position: absolute;
+}
+
+.post_form .btn {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #1f1f3a;
+    width: 78 px;
+    color: #fff;
+    border: none;
+    height: 30 px;
+    margin-left: 69%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.post_form textarea {
+    width: 70.5%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #cde9ff;
+    border: 0px;
+}
+
+.btn {
+    background-color: #209bf0;
+    width: 78 px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    height: 30 px;
+    margin-left: 72%;
+    margin-top: 5%;
+    border-radius: 10px;
+  }
+
+.posts ul{
+    padding: 0;
+}
+
+.posts li{
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px 40px;
+    list-style: none;
+    position: relative;
+    background-color: white;
+}
+
+.posts li .menu_icon{
+    width: 20px;
+    position: absolute;
+    top: 18px;
+    right: 30px;
+}
+
+.posts li .menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.posts li .menu a {
+    text-decoration: none;
+}
+
+.posts li .logo {
+    flex-basis: 15%;
+}
+
+.posts li .logo img{
+    width: 60%;
+}
+
+.posts li .name_body{
+    flex-basis: 85%;
+}
+
+.posts li .name_body .name{
+    font-weight: bold;
+}
+
+.posts li .name_body .datetime{
+    color: gray;
+}
+
+.update-edit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 9.5%;
+  }
+  .update-button {
+    background-color: #209bf0 !important;
+    width: 70px;
+    height: 35px;
+    color: rgb(227, 240, 224);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .cancel-button {
+    background-color: black !important;
+    width: 50px;
+    color: rgb(227, 240, 224);
+    font-weight: bold;
+    border: none;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 9px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .post-border {
+    border: 1px solid #ccc;
+    margin-bottom: 25px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 1px;
+    margin-top: 5px;
+  }
+
+@media screen and (max-width: 500px){
+    .posts li .name_body .name {
+        font-size: 20px;
+    }
+}
