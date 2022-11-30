@@ -24,5 +24,3 @@ So there are no user accounts and follow user functionality. You can take up the
 * Users can delete tweets.
 * Users can send a like to a tweet.
 ```
-
-This is my Twitter clone [Live Deployment](https://twitter-clone.ajzambrano5.repl.co/)
