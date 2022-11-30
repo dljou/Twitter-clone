@@ -1,4 +1,4 @@
-This is my Twitter clone [Live Deployment] (https://twitter-clone.ajzambrano5.repl.co/)
+This is my Twitter clone [Live Deployment](https://twitter-clone.ajzambrano5.repl.co/)
 
 # Twitter Clone
 
